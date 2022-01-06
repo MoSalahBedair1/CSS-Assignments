@@ -1,0 +1,24 @@
+div {
+  font-family: sans-serif;
+  width: fit-content;
+  height: 60px;
+  padding: 0 30px;
+  background-color: #d4d4d4;
+  position: absolute;
+  left: 50%;
+  margin-left: -151px;
+}
+
+div::first-line {
+}
+
+div::first-letter {
+  display: inline-block;
+  color: white;
+  background-color: #f00;
+  font-size: 20px;
+  padding: 11px 10px 13px 10px;
+  margin-left: -46px;
+  margin-right: 10px;
+  line-height: 2.8;
+}

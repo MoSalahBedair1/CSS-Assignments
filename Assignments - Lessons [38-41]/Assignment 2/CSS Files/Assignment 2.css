@@ -1,0 +1,40 @@
+div {
+  background-color: #efefef;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  top: 50%;
+  margin-top: -50px;
+  /*  */
+  -webkit-border-top-left-radius: 10px 21px;
+  -moz-border-top-left-radius: 10px 21px;
+  -o-border-top-left-radius: 10px 21px;
+  -ms-border-top-left-radius: 10px 21px;
+  border-top-left-radius: 10px 21px;
+  /*  */
+  -webkit-border-top-right-radius: 50px 50px;
+  -moz-border-top-right-radius: 50px 50px;
+  -o-border-top-right-radius: 50px 50px;
+  -ms-border-top-right-radius: 50px 50px;
+  border-top-right-radius: 50px 50px;
+  /*  */
+  -webkit-border-bottom-right-radius: 8px 24px;
+  -moz-border-bottom-right-radius: 8px 24px;
+  -o-border-bottom-right-radius: 8px 24px;
+  -ms-border-bottom-right-radius: 8px 24px;
+  border-bottom-right-radius: 8px 24px;
+  /*  */
+  -webkit-border-bottom-left-radius: 50px 50px;
+  -moz-border-bottom-left-radius: 50px 50px;
+  -o-border-bottom-left-radius: 50px 50px;
+  -ms-border-bottom-left-radius: 50px 50px;
+  border-bottom-left-radius: 50px 50px;
+  /*  */
+  -webkit-box-shadow: 0 0 10px 0px #000 inset;
+  -moz-box-shadow: 0 0 10px 0px #000 inset;
+  -o-box-shadow: 0 0 10px 0px #000 inset;
+  -ms-box-shadow: 0 0 10px 0px #000 inset;
+  box-shadow: 0 0 10px 0px #000 inset;
+}

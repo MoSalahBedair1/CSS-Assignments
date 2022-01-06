@@ -1,0 +1,60 @@
+.parent {
+  width: 600px;
+  height: 300px;
+  margin: 20px auto;
+  font-family: sans-serif;
+  background-color: #eee;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-flow: row-reverse wrap-reverse;
+  justify-content: space-between;
+}
+
+div {
+  background-color: #607d8b;
+  width: calc(96% / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+  align-self: stretch;
+}
+
+.three,
+.one {
+  height: 40px;
+}
+
+.one {
+  order: 1;
+  align-self: flex-start;
+}
+
+.two {
+  order: 2;
+}
+
+.three {
+  order: 5;
+  align-self: flex-end;
+}
+
+.four {
+  order: 4;
+}
+
+.five {
+  order: 3;
+}
+
+.six {
+  order: 6;
+}

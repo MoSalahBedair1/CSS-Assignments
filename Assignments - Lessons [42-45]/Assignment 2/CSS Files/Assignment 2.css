@@ -1,0 +1,25 @@
+div {
+  font-family: sans-serif;
+  text-align: center;
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  background-color: #eee !important;
+  color: #000 !important;
+  border: none !important;
+  font-size: 20px !important;
+  /* Hide the text. */
+  text-indent: 105%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+div::before {
+  content: "Elzero";
+  float: left;
+  position: absolute;
+  left: 50%;
+  margin-left: -80px;
+  color: #000;
+}

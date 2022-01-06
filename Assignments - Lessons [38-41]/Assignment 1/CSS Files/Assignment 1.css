@@ -1,0 +1,54 @@
+div {
+  font-family: sans-serif;
+  background-color: #eee;
+  width: 100px;
+  height: 100px;
+  border: 3px solid #000;
+  float: left;
+  position: relative;
+  left: 50%;
+  margin-left: -200px;
+  margin-right: 240px;
+  margin-top: 20px;
+  counter-increment: Counter-1;
+  /*  */
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  /*  */
+  -webkit-box-shadow: 0 0 0 0 #e91e63 outset, 0 0 0 0 #2196f3 outset;
+  -moz-box-shadow: 0 0 0 0 #e91e63 outset, 0 0 0 0 #2196f3 outset;
+  -o-box-shadow: 0 0 0 0 #e91e63 outset, 0 0 0 0 #2196f3 outset;
+  -ms-box-shadow: 0 0 0 0 #e91e63 outset, 0 0 0 0 #2196f3 outset;
+  box-shadow: 0 0 0 0 #e91e63 outset, 0 0 0 0 #2196f3 outset;
+}
+
+div::after {
+  content: "Element";
+  position: relative;
+  left: 50%;
+  margin-left: -29px;
+  top: 16px;
+}
+
+div::before {
+  content: counter(Counter-1);
+  display: block;
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  top: -12px;
+  margin-left: -13px;
+  text-align: center;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #000;
+}
