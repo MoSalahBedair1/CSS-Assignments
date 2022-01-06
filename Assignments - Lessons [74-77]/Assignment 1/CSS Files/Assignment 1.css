@@ -1,0 +1,70 @@
+body {
+  width: 50px;
+  height: 50px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform-origin: 0 0;
+  transform: rotate(360deg) translate(-50%, -50%);
+
+  animation-name: animation-rotate;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+body:hover {
+  animation-play-state: paused;
+}
+
+div {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 5px solid #e91e63;
+  border-left-color: transparent;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+div::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65px;
+  height: 65px;
+  background-color: transparent;
+  border: 5px solid #2196f3;
+  border-right-color: transparent;
+  border-radius: 50%;
+}
+
+div::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  border: 5px solid #ff9800;
+  border-top-color: transparent;
+  border-radius: 50%;
+}
+
+@keyframes animation-rotate {
+  0% {
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+
+  100% {
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}

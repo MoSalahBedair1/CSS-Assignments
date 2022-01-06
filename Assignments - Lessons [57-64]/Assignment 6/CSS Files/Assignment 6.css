@@ -1,0 +1,81 @@
+.container {
+  background-color: #eee;
+  font-family: sans-serif;
+  display: grid;
+  grid-template: auto auto auto auto / auto auto auto auto;
+  grid-gap: 10px;
+  padding: 40px;
+}
+
+p {
+  padding-top: 10px;
+}
+
+.container div {
+  padding: 20px;
+  border-bottom: 5px solid #ff3d00;
+  position: relative;
+}
+
+.Osama-Mohamed,
+.Ahmed-Sayed,
+.Mohamed-Ibrahim,
+.Ezz-Eldin,
+.Mohamed-Sayed,
+.Gamal-Sayed,
+.Eman-Sayed {
+  background-color: white;
+}
+
+span.color {
+  display: block;
+  padding-top: 10px;
+  color: #a8a8ad;
+}
+
+.Osama-Mohamed {
+  grid-column-start: span 2;
+}
+
+.Shady-Nabil {
+  grid-row-start: span 3;
+  background-color: black;
+  color: white;
+}
+
+.Mohamed-Ibrahim {
+  grid-row-start: span 2;
+}
+
+.Mahmoud-Mohamed {
+  grid-column-start: span 2;
+  background-color: black;
+  color: white;
+}
+
+.Ezz-Eldin {
+  grid-column-start: span 2;
+}
+
+.Ibrahim-Sayed {
+  background-color: black;
+  color: white;
+}
+
+.black {
+  color: white;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.container div::after {
+  content: '"';
+  position: absolute;
+  bottom: -35px;
+  right: 15px;
+  color: #bebebe;
+  font-size: 80px;
+  transform: rotate(10deg);
+}

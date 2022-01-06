@@ -1,0 +1,30 @@
+div {
+  width: 620px;
+  display: block;
+  position: relative;
+  left: 50%;
+  margin-left: -310px;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 600px;
+  display: block;
+  padding: 10px;
+  border: none;
+  background-color: #f4f4f4;
+  caret-color: #ff0000;
+}
+
+div::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 620px;
+  height: 2px;
+  background-image: linear-gradient(to right, #f44336 50%, #009688 50%);
+}
+
+input:focus {
+  outline: none;
+}

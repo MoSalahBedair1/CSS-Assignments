@@ -1,0 +1,58 @@
+.grid {
+  background-color: #ddd;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: large;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 15px;
+  grid-template: repeat(6, 1fr) / 1fr 1fr 1fr;
+}
+
+.grid div {
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one {
+  order: 8;
+  grid-column-start: span 3;
+}
+
+.two {
+  order: 2;
+  grid-column-start: span 2;
+}
+
+.three {
+  order: 3;
+}
+
+.four {
+  order: 4;
+}
+
+.five {
+  order: 5;
+  grid-column-start: span 2;
+  grid-row-start: span 3;
+}
+
+.six {
+  order: 6;
+}
+
+.seven {
+  order: 7;
+}
+
+.eight {
+  order: 1;
+  grid-column-start: span 3;
+}

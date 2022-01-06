@@ -1,0 +1,3 @@
+ask in stack overflow or elzero group:
+when centring the the before pseudo element
+why the margin-top:   isn't working

@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+div.container {
+  font-weight: bold;
+  text-align: center;
+  color: #009688;
+  display: grid;
+  grid-template: repeat(3, 60px) / repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+div.container div {
+  padding: 10px;
+  background-color: #eee;
+}
+
+.product-one {
+  grid-column-start: span 2;
+}
+
+.product-four {
+  grid-column-start: span 2;
+}
+
+span {
+  display: block;
+  color: black;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+  div.container {
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    display: grid;
+    grid-template: repeat(4, 60px) / auto;
+    grid-gap: 20px;
+  }
+
+  div.container div {
+    padding: 10px;
+    background-color: #eee;
+  }
+
+  .product-one {
+    grid-column-start: span 1;
+  }
+
+  .product-four {
+    grid-column-start: span 1;
+  }
+}
+
+/* Small Screens */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.container {
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    display: grid;
+    grid-template: repeat(4, 60px) / auto;
+    grid-gap: 20px;
+  }
+
+  div.container div {
+    padding: 10px;
+    background-color: #eee;
+  }
+
+  .product-one {
+    grid-column-start: span 1;
+  }
+
+  .product-four {
+    grid-column-start: span 1;
+  }
+}
+
+/* Medium Screens */
+
+@media (min-width: 992px) {
+  div.container {
+    font-weight: bold;
+    text-align: center;
+    color: red;
+    display: grid;
+    grid-template: repeat(2, 60px) / repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+  div.container div {
+    padding: 10px;
+    background-color: #eee;
+  }
+
+  .product-one {
+    grid-column-start: span 3;
+  }
+
+  .product-four {
+    grid-column-start: span 1;
+  }
+
+  span {
+    display: block;
+    color: black;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+  }
+}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {
+  div.container {
+    font-weight: bold;
+    text-align: center;
+    color: #009688;
+    display: grid;
+    grid-template: repeat(3, 60px) / repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  div.container div {
+    padding: 10px;
+    background-color: #eee;
+  }
+
+  .product-one {
+    grid-column-start: span 2;
+  }
+
+  .product-four {
+    grid-column-start: span 2;
+  }
+
+  span {
+    display: block;
+    color: black;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+  }
+}

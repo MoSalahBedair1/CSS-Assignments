@@ -1,0 +1,16 @@
+div.L,
+div.E {
+  width: 530px;
+  height: 350px;
+  background-color: #323234;
+  display: grid;
+  grid-template: repeat(7, 50px) / repeat(5, 50px) 30px repeat(5, 50px);
+}
+
+div.white-transparent {
+  background-color: white;
+}
+
+div.E {
+  margin: 20px auto;
+}

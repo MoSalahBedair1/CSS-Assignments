@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  background-color: rgb(221, 221, 221);
+  width: 600px;
+  height: 65px;
+  margin: 20px auto;
+  padding: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 4.2;
+  position: relative;
+}
+.arrow::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 15px;
+  border-style: solid;
+}
+
+.arrow.top::before {
+  border-color: transparent transparent rgb(221, 221, 221) transparent;
+  top: -46%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.arrow.right::before {
+  border-color: transparent transparent transparent rgb(221, 221, 221);
+  top: 50%;
+  left: calc(100% + 14px);
+  transform: translate(-50%, -50%);
+}
+
+.arrow.bottom::before {
+  border-color: rgb(221, 221, 221) transparent transparent transparent;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.arrow.left::before {
+  border-color: transparent rgb(221, 221, 221) transparent transparent;
+  top: 50%;
+  left: -5%;
+  transform: translate(0, -50%);
+}
